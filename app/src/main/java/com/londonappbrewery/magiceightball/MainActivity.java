@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.ball2,
                 R.drawable.ball3,
                 R.drawable.ball4,
-                R.drawable.ball5
+                R.drawable.ball5,
+                R.drawable.ball6
         };
 
         Button myButton;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Random randomNumberGenerator = new Random();
-                int number =randomNumberGenerator.nextInt(5);
+                int number =randomNumberGenerator.nextInt(6);
                 Log.d("8ball","number generated");
 
                 ballDisplay.setImageResource(ballArray[number]);
